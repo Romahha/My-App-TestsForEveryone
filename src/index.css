@@ -1,0 +1,142 @@
+body {
+  background-color: #fcf7a1;
+  width: 100%;
+  overflow:hidden;
+  margin: 0;
+}
+
+footer {
+  background-color: #aa93bf;
+  height: 100px;
+  padding: 20px 50px;
+  width: 100%; 
+  position: fixed;
+  bottom: 0px;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #aa93bf;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #fcf7a1; color: #aa93bf;}
+
+ul.topnav li a.active {background-color: #fcf7a1; color: #aa93bf;}
+
+ul.topnav li.right {float: right;}
+
+.test {
+	width: 100%;
+	padding: 0;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.test li {
+	position: absolute;
+	background-color:#fcf7a1;
+    /*top: 80px;*/
+	top: 45px; ;
+	height: 450px;	
+}
+
+
+
+h1 {
+	font-size: 28px;
+}
+
+.answer-container {
+	display: inline-block;
+	margin: 10px;
+	padding: 0;
+    border: 10px solid #aa93bf;
+}
+
+.answer3-container {
+	margin: 0px 10px;
+	padding: 0px;
+	border: 0px solid #aa93bf;
+}
+
+table {
+	border: 1px solid #aa93bf;
+    margin: 0 auto;
+    border-spacing:0px;
+}
+
+th, td {
+	border: 1px solid #aa93bf;
+}
+
+
+.icecream {
+	height: 130px;
+    width: 130px;
+    background-color: white;
+}
+
+.svg {
+	height: 200px;
+    width: 200px;
+}
+
+
+.icecream #svg_5, .icecream #svg_6, .icecream #svg_7, .icecream #svg_8, .icecream #svg_9 {
+    opacity: 0;
+	animation-name: draw;
+    animation-duration: 0.5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+  }
+#svg_6 {
+	animation-delay: 0.4s;
+}
+#svg_7 {
+	animation-delay: 0.9s;
+}
+#svg_8 {
+	animation-delay: 1.4s;
+}
+#svg_9 {
+	animation-delay: 1.9s;
+} 
+
+@keyframes draw {
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+	display:none;
+}
+
+.brn-answer {
+	background-color: #aa93bf;
+	height: 50px;
+	width: 130px;
+	margin: 5px 20px;
+	display: inline-block;
+	font-size: 34px;
+	color: #fcf7a1;
+	line-height: 34px;
+	padding-top: 20px;
+}
+
+.numbers {
+  font-size: 34px;
+}
